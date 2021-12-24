@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-spinner class="spinner-style" *ngIf="loading"></mat-spinner>
+    <div class="repo-list">
+        <div *ngFor="let repo of repos | paginate: { id: 'repo_list', itemsPerPage: 10, currentPage: pageNo, totalItems: repoCount }">
+            <app-repository [repo] = "repo"></app-repository>
+        </div>
+    </div>
+    <div class="paginate-style">
+        <button class="btn-style-start" (click)="goToFirstPage()">start</button>
+        <pagination-controls (pageChange)="getPage($event)" id="repo_list"  
+            previousLabel="Older"    nextLabel="Newer">
+        </pagination-controls>
+        <button class="btn-style-end" (click)="goToLastPage()">end</button>
+    </div>
+</div>

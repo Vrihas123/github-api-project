@@ -1,0 +1,10 @@
+<div>
+    <mat-card class="card">
+        <h2>{{repo.name}}</h2>
+        <h5>{{repo.description}}</h5>
+        <div *ngFor="let language of languageList" class="languages">
+            {{ language }}
+        </div>
+    </mat-card>
+</div>
+

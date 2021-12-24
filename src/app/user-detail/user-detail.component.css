@@ -1,0 +1,47 @@
+.container{
+    max-width: 1200px;
+    margin: 56px auto 32px;
+    align-content: center;
+    padding-left: 16px;
+}
+
+.row{
+    display: flex;
+}
+
+.img-style {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+
+.detail-style {
+    margin-top: 16px;
+    margin-left: 32px;
+    padding-right: 16px;
+}
+
+.name-style {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.bio-style {
+    font-weight: 400;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.link-style {
+    color: black;
+    font-style: italic;
+    margin-top: 16px;
+    text-decoration: none;
+}

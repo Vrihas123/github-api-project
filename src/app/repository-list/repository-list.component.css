@@ -1,0 +1,45 @@
+.container{
+    max-width: 1200px;
+    margin: 40px auto 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    align-content: center;
+}
+
+.repo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.paginate-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.btn-style-start {
+    height: 32px;
+    width: 60px;
+    margin-top: 10px;
+    border: none;
+    background-color: #2199e8;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-style-end {
+    height: 32px;
+    width: 60px;
+    margin-left: 36px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2199e8;
+    color: white;
+    font-size: 16px;
+}
+
+.spinner-style {
+    margin: 0 auto;
+}
