@@ -1,27 +1,26 @@
 # GithubApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This Angular project list all the public repositories of a user along with the user's information.
 
-## Development server
+### Steps to run the project in local environment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Install Angular 13+ version if not installed already. Run `npm install -g @angular/cli` for installing angular.
+- Clone this project. Run `git clone https://github.com/Vrihas123/github-api-project.git` in your desired location.
+- Go inside this project.
+- Run `npm install` for installing all the dependencies and packages of this project.
+- Run `ng serve` for running the local server.
+- Go to `http://localhost:4200/` in your brower.
+- Default user is Vrihas123. You can replace it by your username. Example : `http://localhost:4200/github/{username}`
 
-## Code scaffolding
+### File structure of this project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Components
+  - Home Component : Main home page which contains the user information and list of repositories.
+  - User Details Component : Contains details of User such as name, bio, avatar etc.
+  - Repository List Component : Contains the list of user's repositories including pagination.
+  - Repository Component : Contains information about single repository.
+  - Error Component : Handles invalid URL access.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Rest Api Service : Contains all the API callings such as fetching user details, fetching repositories list and list of languages of each repository
+- Router Config file : Handles the routing among components.
+- Libraries used : Angular Material, ngx-pagination
